@@ -1,104 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
-    <!-- link favicon -->
-    <link rel="icon" type="image/png" sizes="16x16"  href="./Images/logo pepsi.ico">
+    <title>HOME</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/imageSlick.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/prod3.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <!-- link css -->
-    <link rel="stylesheet" href="./index.css">
-    <!-- icon menu -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <!-- font stay on -->
+    <!-- link icon Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- link font GG -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <!-- icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <!-- font  lorem -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
-    <!-- font nav -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- API map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJShytekhLs7OVZ1ZrA0sq0NAugoosuLo"></script>
+
 
 </head>
-<body>
-    <div class="wrapper">
-        <div class="nav">
-            <div class="nav-left">
-                <a class="ic-mn" href="index.html" target="page" style="margin-left: 20px;"><span class="material-symbols-outlined" style="color: rgb(136, 197, 253);" >home</span></a>
-                <a class="ctr" href="index.html" target="page" style="color: rgb(136, 197, 253);"> TRANG CHỦ</a>
-                <a class="ctr" href="SanPham.html" target="page">SẢN PHẨM</a>
-                <a class="ctr" href="DaiLy.html" target="page">ĐẠI LÝ</a>
+
+<body onload="initMap()">
+
+    <nav class="mb-2vh ">
+        <ul>
+            <li> <a href="">Home</a> </li>
+            <li> <a href="">News
+                    <ul>
+                        <li><a href="#"> <i style="display: none;" class="fa-solid fa-arrow-right"></i>
+                                BWF</a></li>
+                        <li><a href="#"><i style="display: none;" class="fa-solid fa-arrow-right"></i>
+                                vIET nAM</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li> <a href="#"> Categogy
+                    <ul>
+                        <li><a href="#"> <i style="display: none;" 
+                            class="fa-solid fa-arrow-right"></i>
+                                Racket</a></li>
+                        <li><a href="#"><i style="display: none;" class="fa-solid fa-arrow-right"></i>
+                                Fashion</a></li>
+                        <li><a href="#"><i style="display: none;" class="fa-solid fa-arrow-right"></i>
+                                accessory</a></li>
+                    </ul>
+                </a>
+
+            </li>
+            <li> <a href="">Court</a> </li>
+            <li> <a href="">Policy
+                    <ul>
+                        <li><a href="#"><i style="display: none;" 
+                            class="fa-solid fa-arrow-right"></i>Terms</a></li>
+                        <li><a href="#"><i style="display: none;" 
+                            class="fa-solid fa-arrow-right"></i>Privacy</a></li>
+                        <li><a href="#"><i style="display: none;" 
+                            class="fa-solid fa-arrow-right"></i>Warranty</a></li>
+                            
+                    </ul>
+                </a>
+            </li>
+        </ul>
+        <h2 class=" w40"><a href="index.html">WEBMINTON</a></h2>
+        <div class="row r-jt-bt  w35 ">
+            <div class="w60 row r-jt-bt r-al-ct "><input class=" lh-3vh br-10px w80 mx-1 px-2" type="text"
+                    placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass gray "></i>
             </div>
-            <a class="ic-lgr" href=""><img style="width: 100px; height: 50px; margin-right: 50px;" src="./Images/logo-rw.jpg" alt=""></a>
-        </div>
-
-        <div class="banner">
-            <a href="SanPham.html" target="page"> <button>MUA HÀNG</button></a></div>
-        <br>
-        <h1>STAY ON THE PULSE. FOLLOW PEPSI.</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quidem culpa neque reiciendis mollitia, exercitationem atque eius velit dignissimos explicabo enim quibusdam quis nam saepe earum provident aliquid. Inventore, doloremque tempore corporis velit sunt consequatur consequuntur aliquid? Odit, corrupti dignissimos debitis id suscipit nisi officia veritatis rerum nihil quisquam eum aliquam. Delectus labore temporibus nostrum corrupti magni ut molestiae minima, voluptatem quibusdam perspiciatis fuga quis praesentium. Delectus quaerat laboriosam fugit quidem natus ducimus debitis et repellendus recusandae quas. Quidem dignissimos neque voluptatum expedita minima deleniti provident mollitia tempora corporis, fuga exercitationem repellendus sit accusantium similique non ullam excepturi veniam impedit!</p>
-
-        <div class="content">
-            <img style="width: 850px; margin-left: 10px; " src="./Images/anh02.jpg" alt="">
-            <img style="width: 410px; margin-left: 10px;" src="./Images/anh03.jpg" alt="">
-        </div>
-
-        <div class="content2">
-            <h1> CÓ PEPSI, KHỎI NGHĨ SUY !</h1>
-            <div class="cnt2-right">
-                <p style="width: 50% ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos repellendus maxime culpa id reiciendis excepturi minus, at ex dicta aperiam quis provident recusandae, eligendi ipsam aut esse nihil tempora nesciunt. Mollitia culpa consequatur corporis! Nihil, libero fugit natus expedita dolor at quibusdam quisquam laborum! Reprehenderit laudantium quibusdam velit, eos perferendis expedita natus cupiditate quam. Obcaecati fugit debitis, quod harum iure itaque earum nobis maxime officia numquam, voluptatum ut perspiciatis quasi voluptates distinctio modi impedit molestiae esse mollitia a. Ipsa asperiores earum temporibus porro ad quis tempore mollitia facere qui, fuga voluptatum ducimus necessitatibus consequuntur sed illum pariatur, voluptate sequi?</p>
-                <iframe style="margin-left: 50px;" src="https://www.youtube.com/embed/1g-QPrGXT7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="row r-al-ct fs-15p gray "> <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="row r-al-ct r-jt-ar  w10 fs-15p gray"> <i class="fa-solid fa-user px20"
+                    style="border-right: 1px solid gray;"></i> <i class="px20 fa-solid fa-user-plus"></i>
+            </div>
+            <div>
             </div>
         </div>
-        <footer>
-            <a href="index.html" target="page"><img class="logo" src="./Images/logo-rw.jpg" alt=""></a>
-            <table>
-                <tr>
-                    <td><a href="">CONTACT US</a></td>
-                    <td><a href="">COPYRIGHT</a></td>
-                    <td><a href="">SERVE PEPSI</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">TERMS &CONDITIONS</a></td>
-                    <td><a href="">PRODUCT FACTS</a></td>
-                    <td><a href="">ABOUT OUR ADS</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">PRIVACY</a></td>
-                    <td><a href="">STORE LOCATOR</a></td>
-                    <td><a href="">CAREERS</a></td>
-                </tr>
-            </table>
-            <div class="sub">
-                <p class="subcribe" style="font-family: 'Montserrat', sans-serif;">SUBSCRIBE TO NEWLETTER</p>
-                <div class="icons">
-                    <span class="material-symbols-outlined">
-                        home
-                        </span>
-                    <span class="material-symbols-outlined">
-                            home
-                    </span>
-                    <span class="material-symbols-outlined">
-                                home
-                    </span>
-                    <span class="material-symbols-outlined">
-                        home
-                        </span>
-                    <span class="material-symbols-outlined">
-                            home
-                    </span>
+
+    </nav>
+
+    <div style="margin-top: 10vh;" class="  "></div>
+
+    <div class="slide-show ">
+        <div class="main  ">
+            <div class="img-wrap "><img class="" src="Images/0.png" alt="">
+            </div>
+            <p class="control prev"> <i class="fa-solid fa-chevron-left"></i>
+            </p>
+            <p class="control next"> <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <div class="slogan">
+                <a href="">
+                    <p>Get start </p> <br>
+                    <p>Your favorite shopping</p>
+                </a>
+            </div>
+        </div>
+        <div class="list-img">
+           
+            <div><img src="Images/0.png" alt=""></div>
+            <div><img src="Images/1.png" alt=""></div>
+            <div><img src="Images/2.png" alt=""></div>
+            <div><img src="Images/3.png" alt=""></div>
+            <div><img src="Images/4.png" alt=""></div>
+            <div><img src="Images/prd-accessories01.png" alt=""></div>
+            <div><img src="Images/prd-accessories02.png" alt=""></div>
+            <div><img src="Images/prd-accessories03.png" alt=""></div>
+            <div><img src="Images/prd-accessories04.png" alt=""></div>
+        </div>
+
+    </div>
+
+    <div class="bar mt-5vh ">
+        <p class="mr-2px ff">Page 1 <i class="fa-solid fa-chevron-right"></i> </p> 
+    </div>
+
+
+
+    <section class=" h80   ">
+        <div class="w50 col c-jt-bt px5">
+            <p class="mb-2vh">BangKok - 01/10/2023</p>
+            <h3 class="mb-2vh">Sawasadee Cup - F.Y.C. Badminton Club Thailand </h3>
+            <span class="mb-2vh"> Get ready for the International Badminton Tournament in Hat Yai!
+                Encouragement for all the players who participated in the great delivery. And welcome
+                badminton players from all 
+                over the world to come here to create a special experience in our beautiful sea land!
+            </span>
+            <div class="w35 mb-2vh r r-jt-ct r-al-ct "><p class="from-top"><a class="" href="#">Readmore <i class="  fa-solid fa-angles-right"></i></a></p></div>
+        </div >
+        <div class="w50 px5 "><img src="Images/sawadee.jpg" alt="sawadee"></div>
+    </section>
+    
+    <h2 class="ff"> Brands badminton</h2> <br>
+    <div class="brands   ">     
+        <div class=" row r-jt-bt w100  r-al-ct h50">
+            <div class="w23 h100"><a href="#"><img src="Images/brand-yonex.jpg" alt="yonex"></a></div>
+            <div class="w23 h100"><a href=""><img src="Images/brand-mizuno.jpg" alt="mizuno"></a></div>
+            <div class="w23 h100"><a href=""><img src="Images/brand-babolat.jpg" alt="babolat"></a></div>
+            <div class="w23 h100"><a href="#"><img src="Images/brand-gosen.jpg" alt="gosen"></a></div>
+        </div>
+        <div class=" row r-jt-bt w100 h50 r-al-ct">
+            <div class="w23 h100"><a href=""><img src="Images/brand-adidas.jpg" alt="adidas"></a></div>
+            <div class="w23 h100"><a href=""><img style=" height: 75%; margin-top: 6%; border: 1px #aaa solid; object-fit:cover;" src="Images/brand-McDavid.png" alt="McDavid"></a></div>
+            <div class="w23 h100"><a href=""><img src="Images/brand-wilson.jpg" alt="wilson"></a></div>
+            <div class="w23 h100"><a href=""><img src="Images/brand-victor.jpg" alt="victor"></a></div>
+        </div>
+    
+    </div>
+    
+    <div class="mt-5vh alexen">
+        <img src="Images/Axelsen.png" alt="">
+        <p class="alexenp1" >our products</p>
+        <p class="alexenp2 from-bottom"><a href="#">learn more</a></p>     
+    </div>
+
+<!-- court rental service -->
+
+    <section class=" h50   " >
+        <div class="w50 px5  "><img  style="" src="Images/ad-court.jpg" alt="couurt"></div>
+        <div class="w50 col c-jt-bt px5 ">
+            <p class="mb-2vh">Court Da Nang </p>
+            <h3 class="mb-2vh ">Badminton court rental service</h3>
+            <span class="mb-2vh"> Badminton court rental service in Da Nang is a great choice for 
+                believers who love this sport. With quality foundation and modern facilities, 
+                badminton courts in Da Nang meet the demand for good playing space and comfortable 
+                environment. Guests can enjoy an exciting match with friends and family, and take 
+                advantage of amenities such as badminton shoes and professional 
+                racket rentals. Come to Da Nang and enjoy the fun of badminton at these quality courts!
+            
+            </span>
+            <div class="w35 mb-2vh  h20" style="height: 5vh;">
+                <p class="from-top" >
+                    <a class="" href="#">Rent Now ! 
+                        <i class="  fa-solid fa-angles-right"></i>
+                    </a>
+                </p>
+            </div>
+        </div >
+        
+    </section>
+
+<!-- PERFORMANCE -->
+
+    <section  class="adshirt "> 
+        <div class="w50 col c-jt-ct px5 adshirt1 ">
+            <h3 class="h30">PERFORMANCE YOU CAN TRUST</h3>
+            <span class="h30  ">Athletic aspanparel designed to support each movement in every environment is key to achieving peak-performance on the 
+                court.</span>
+            <div class=" mb-2vh row r-jt-st " style="border: none; height: 10%; ">
+                <p class="from-left " style="border: 1px solid #678;width: 35%; margin-right: 2%;" >
+                    <a class="" href="#">Buy Now! </a>
+                </p>
+                <p class="from-right " style="border: 1px solid #678; width: 35%;">
+                    <a class="" href="#">Readmore ...</a>
+                </p>
+            </div>
+        </div >
+
+        <div class="w50 px5   adshirt2"><img class=""  src="Images/ad-shirt.png" alt="shirt"></div>
+    </section>
+
+<!-- choices -->
+    <div class=" choices  p0 m0 h50 ">
+        <h2 class=""> WHY SHOULD CHOOSE <span class="" style="opacity: 0.3; font-size: 45px; margin-left: 1%;"> WEBMINTON <sup><span>&#174;</span></sup></span></h2>
+        <div class="row r-jt-bt mx5 ">
+            <div class="col">
+                <div class=""><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <h4>100%</h4>
+                <strong>Best deal</strong>
+                <p>Best price on the market in the same product category</p>
+            </div>
+
+            <div class="col">
+                <div><i class="fa-solid fa-envelope-circle-check"></i></div>
+                <h4>Clearly</h4>
+                <strong>genuine</strong>
+                <p>Quick, guaranteed check-in policy</p>
+            </div>
+
+            <div class="col">
+                <div><i class="fa-solid fa-hand-holding-hand"></i></div>
+                <h4>100%</h4>
+                <strong>Refunding</strong>
+                <p>Specific return and refund policy, protect customer interests</p>
+            </div>
+
+            <div class="col">
+                <div><i class="fa-solid fa-truck-fast"></i></div>
+                <h4>100%</h4>
+                <strong>Express</strong>
+                <p>Cheap, fast,cargo safety & accurate shipping.</p>
+            </div>
+    
+        </div>
+    </div>
+
+    <footer class=""  >
+        <div class=" ml5 ">
+            <div class=" row r-jt-ct r-al-ct">
+                <span class="" style="opacity: 2; font-size: 35px; margin-left: 1%;"> WEBMINTON <sup><span>&#174; </span></sup>
+                </span>
+            </div>
+            <div>
+                <p><strong>Hotline 01: (8h30 - 21:00)</strong></p> 
+                <p>+84 937117360</p>
+            </div>
+            <div class="">
+                <p><strong>Hotline 02: (24/24)</strong></p>
+                <p>+84 937117345</p>
+            </div>
+            <div>
+                <p><strong>Email:</strong></p>
+                <p>hoahmpd06987@fpt.edu.vn</p>
+            </div>
+            <div class="">
+                <p><strong>Address:</strong></p>
+                <p>137 Nguyen Thi Thap Street , Thanh Khe, Da Nang City</p>
+            </div>
+            <div class="w100 col c-jt-ct">
+                <p>Follow us</p>
+                <div class=" w100 row r-jt-st">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-weixin"></i></a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+
+        <div class=" ">
+            <div class=" row r-jt-ct r-al-ct">
+                <h3>Information</h3>
+            </div>
+            <div> <p>About </p> </div>
+            <div> <p>Contact</p> </div>
+            <div> <p>System of stores</p> </div>
+            <div> <p>Partner of Us</p> </div>
+            
+            
+
+
+            <div class="w100 col c-jt-ct bcdm1" style="height: 50%; width: 100%; margin-top: 13%;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/
+                duv7mSVi3ms681Rx" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope;
+                    picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class=" ">
+            <div class=" row r-jt-ct r-al-ct">
+                <h3>News</h3>
+            </div>
+            <div>  <a href=""><p>Notification</p>  </a>  </div>
+            <div>  <a href=""><p>Promotion</p>  </a>  </div>
+            <div>  <a href=""><p>Vietnam badminton news</p>  </a>  </div>
+            <div>  <a href=""><p>World badminton news</p>  </a>  </div>
+            <div class="" style="height: 50%; margin-top: 13.3%;">
+                <div id="fb-root">
+                    <div class="fb-comments" data-href="http://127.0.0.1:65418/Assignment1/index.html" 
+                        data-width="100%" data-numposts="5">
+                    </div>
+                    <div class="fb-like" data-href="http://127.0.0.1:65418/Assignment1/index.html" data-width
+                        ="100" data-layout="standard" data-action="like" data-size="small" 
+                        data-share="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" mr5">
+            <div class=" row r-jt-ct r-al-ct">
+                <h3>Support</h3>
+            </div>
+            <div>
+                <a href=""><p>Terms and Conditions</p> </a>
+            </div>
+            <div class="">
+                <a href=""><p>Privacy Policy</p></a>
+            </div>
+            <div>
+                <a href=""><p> Terms of sale</p></a>
+            </div>
+            <div>
+                <a href=""><p>Warranty Policy</p></a>
+            </div>
+            <div >
+                <a href=""><p>Shipping & forwarding policy</p></a>
+               
+            </div>
+            <div class="bcdm1" style="height: 50%;">
+                <div id="map" style="height: 400px; width: 100%;">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <a href="#" id="back-to-top" title="Lên đầu trang" class=""><i class="fa-regular fa-circle-up"></i></a>
+
+  
+ <section></section>
+
 </body>
+<script src="Js/slideshow.js"></script>
+<script src="Js/scroll.js"></script>
+<script src="Js/apimap.js"></script>
+<script src="Js/chatbox.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0&appId=623089233255750&autoLogAppEvents=1"></script>
 </html>
