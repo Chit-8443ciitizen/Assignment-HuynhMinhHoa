@@ -1,0 +1,25 @@
+.news-bwf{
+    margin: 0;
+    padding: 0; height: auto; width: 100%;
+}
+.news-bwf div{
+    margin: 1vh auto;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-bwf-content p{
+    text-align: start;
+    margin: 2vh 0;
+}
+.news-bwf-content div p{
+    color: rgba(102, 119, 136, 0.575);
+    font-style: italic;
+}
+video{
+    width: 50vw;
+    height: 40vh ;
+
+}

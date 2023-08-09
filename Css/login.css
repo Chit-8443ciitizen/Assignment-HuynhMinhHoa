@@ -1,0 +1,72 @@
+.login{
+    padding: 0;
+    margin: 0;
+}
+.login>div{ 
+    width: 35%;
+    margin: 1vh auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(102, 119, 136, 0.429);
+}
+.login div div{
+    margin: 2vh 0;
+}
+.login div div:first-child{
+    border-bottom: 2px #678 solid;
+    padding-bottom: 1vh;
+}
+.login-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+form{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    width: 88%;
+    height: 5vh;
+    padding: 0 1vw;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+
+form button{
+    width: 95%;
+    margin: 1vh 0;
+    height: 7vh;
+    border: none;
+    border-radius: 5px;
+    color: #678;
+    font-size: 20px; font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 3px 0 #678;
+    transition: 0.5s;
+}
+form button:hover{
+    background-color: #678;
+    color: #fff;
+    transition: 1s ease;
+  }
+  form button:active{
+    box-shadow: none;
+    transform: translateY(10px) ;
+  }
+  .login-form div a{
+    text-decoration: none;
+    color: rgba(102, 119, 136, 0.459);
+  }
+  .login-form div a:first-child{
+    margin-right: 0.5vw;
+  }
+  .login-form div a:hover{
+    color: #678;
+    text-decoration: underline;
+    transition: 1s ease;
+  }

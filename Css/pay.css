@@ -1,0 +1,228 @@
+body{
+    margin: 0;padding: 0;
+}
+body>div{
+    padding: 0;
+    margin: 0;
+}
+#pay{
+    width: 100%;
+    height: 100vh;
+}
+form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.pay-inf-customer{
+    width: 60vw;
+    height: 100%;
+    border-right: 1px solid #678;
+    padding: 2vh 2vw; margin-left: 8vw;
+}
+.pay-inf-customer>div:first-child{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pay-inf-customer>div{
+    width: 50vw;    
+}
+.pay-inf-delivery{
+    width: 27vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pay-inf-delivery input{
+    width: 22vw;
+    margin: 1vh auto;
+    height: 7vh;
+    border: none;
+    padding: 0 1vw;
+    border-radius: 10px;
+    box-shadow: #678 1px 1px 3px 1px;
+}
+
+.pay-inf-delivery input{
+    margin: 1vh 0;
+}
+.pay-inf-customer>div:last-child{
+    width: 50vw;
+    height: 40vh;
+}
+.pay-inf-paytion{
+    width: 23vw; height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vh 0.5vw;
+}
+.pay-inf-paytion>div{
+    width: 23vw;
+}
+.pay-inf-paytion-choices{
+    display: flex; width: 23vw;
+    flex-direction: column;
+    border: #678 1px solid;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 1vh;
+}
+.pay-inf-paytion-choices>div{
+    width: 23vw;
+}
+.pay-inf-paytion-choice{
+    display: flex; width: 22vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.pay-inf-paytion-choices>div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.pay-inf-paytion-choices>div:last-child p span{
+    color: rgba(102, 119, 136, 0.464);
+}
+
+
+
+.pay-inf-paytion-choice input, .pay-inf-paytion-choice p
+{
+    margin-right: 1vw;
+}
+
+.pay-inf-confirm{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pay-inf-confirm>div:first-child{
+    width: 100% !important;
+}
+.pay-inf-confirm>div{
+    width: 90%;
+}
+.pay-inf-quantity{
+    padding: 4vh 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px rgba(102, 119, 136, 0.474) solid;
+}
+.pay-inf-quantity-detail{
+    margin-top: 1vh !important; height: 8vh;
+     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 2vh 0;
+    border-bottom: 1px solid rgba(102, 119, 136, 0.658);
+}
+.pay-inf-quantity-detail>div{
+    width: 15%; padding: 0; margin: 0;
+    height: 100%;
+    background-color: rgba(102, 119, 136, 0.158);
+    border-radius: 8px;
+    position: relative ;
+
+}
+
+.pay-inf-quantity-detail>div img{
+
+    object-fit:cover; 
+}
+.pay-inf-quantity-detail>div span{
+    position: absolute;
+    top:-15%;
+    right: -5%;
+    color: #fff;
+    background-color: #ff6200;
+    width: 30%;
+    text-align: center;
+    border-radius: 100%;
+}
+.pay-inf-quantity-detail p:last-child{
+    width: 20%;
+}
+.pay-inf-quantity-total{
+    display: flex; 
+    height: 4vh;
+    margin: 1vh auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pay-inf-quantity-total>p:last-child{
+    font-size: 20px;
+    font-weight: 700;
+}
+.pay-inf-quantity-order{
+    margin: 1vh auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; height: 5vh;
+}
+.pay-inf-quantity-order i{
+    font-size: 15px;
+    margin-right: 0.5vw;
+}
+.pay-inf-quantity-order i:hover{
+    color: #678;
+}
+.pay-inf-quantity-order a{
+    text-decoration: none;
+    color: #678;
+}
+.pay-inf-quantity-order div:hover i, .pay-inf-quantity-order div:hover a
+{
+    color: #ff6200;
+}
+.pay-inf-quantity-order button{
+    width: 40%; height: 5vh;
+    background-color: #fff;
+  border: 1px #678 solid;
+  border-radius: 5px;
+  color: #678;
+    font-size: 20px; font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 3px 0 #678;
+    transition: 0.5s;
+}
+.pay-inf-quantity-order button:hover{
+    background-color: #678;
+    transition: 1s ease;
+  }
+.pay-inf-quantity-order button:active{
+    box-shadow: none;
+    transform: translateY(10px) ;
+  }
+.pay-inf-quantity-order button a{
+    text-decoration: none;
+    color: #678;
+  }
+.pay-inf-quantity-order button:hover a{
+    color: #fff;
+    transition: 1s ease;
+  }
+.pay-inf-confirm>p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 1vh auto;
+    width: 90%;
+    color: rgba(102, 119, 136, 0.469);
+    font-style: italic;
+}

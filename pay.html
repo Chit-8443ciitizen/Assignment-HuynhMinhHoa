@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/pay.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/prod3.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- link icon Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- link font GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- API map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJShytekhLs7OVZ1ZrA0sq0NAugoosuLo"></script>
+
+
+</head>
+<body>
+    <div #="pay">
+        <form action="#" method="post">
+            <div class="pay-inf-customer ">
+                <div class=""><h1>WEBMINTON</h1></div>
+                <div class="row r-jt-bt ">
+                    <div class="pay-inf-delivery ">
+                        <h3>Delivery information</h3>
+                        <input type="text" placeholder="Full name receiver">
+                        <input type="text" placeholder="Phone number receiver">
+                        <input type="text" placeholder="Address">
+                        <input type="email" placeholder="Email">
+                    </div>
+            
+                    <div class=" pay-inf-paytion">
+                        <h3>Paytion</h3> 
+                        <div class="pay-inf-paytion-choices">
+                            <div class="pay-inf-paytion-choice">
+                                <input type="radio">
+                                <p>Payment on delivery (COD)</p>
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                            </div>
+                            <div class="pay-inf-paytion-choice">
+                                <input type="radio">
+                                <p>Paying through bank</p>
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div class="col ">
+                                <p>Bank: <span>ACB Da Nang</span></p>
+                                <p>Acc number:<span> 23802947</span></p>
+                                <p>Acc holder:<span> Huynh Minh Hoa</span></p>
+                                <p>Content:<span> Name + Order phone number</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pay-inf-confirm ">
+                <div class="pay-inf-quantity">
+                   <h3>Order (<span>1</span> product)</h3>     
+                </div>
+
+                <div class="pay-inf-quantity-detail ">
+                    <div>
+                        <img src="Images/prd-short01.png" alt="">
+                        <span>1</span>
+                    </div>
+                    
+                    <p>Men's white YONEX badminton pants - code 038</p>
+                    <p>124 000 ₫</p>
+                </div>
+                <div class="pay-inf-quantity-detail ">
+                    <div>
+                        <img src="Images/prd-shirt01.png" alt="">
+                        <span>1</span>
+                    </div>
+                    
+                    <p>Men's  YONEX badminton shirt - code 043</p>
+                    <p>540 000 ₫</p>
+                </div>
+
+                <div class="pay-inf-quantity-total">
+                    <p>Total</p>
+                    <p>248 000 ₫</p>
+                </div>
+                <div class="pay-inf-quantity-order">
+                    <div class="row r-al-ct r-jt-st ">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <a href="product-detail.html">Back to cart</a>
+                    </div>
+                    <button><a href="thankyou.html">Order</a></button>
+                </div>
+                <p>
+                    - Price does not include shipping costs. Shipping cost will be informed by staff upon order confirmation.
+                </p>
+                <p>
+                    - Order processing time: From 8:00 a.m. to 5:00 p.m. Monday to Saturday. Orders after this time will be processed on the next working day.
+                </p>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

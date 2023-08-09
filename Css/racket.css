@@ -1,0 +1,159 @@
+.rackets{
+   display: flex; flex-direction: row;
+    padding: 0;margin: 0; 
+}
+.rackets>div{
+    margin: 1% 1% ;
+}
+.product-portfolio{
+    width: 20%; border: 1px solid #000;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2%;
+    margin-left: 2% !important;
+}
+.product-portfolio a{
+    text-decoration: none;
+    color: rgba(102, 119, 136, 0.579);
+    margin: 1vh 0;
+}
+
+.product-portfolio a:hover{
+    color: rgba(0, 255, 255, 0.565);
+}
+.product-portfolio i::before{
+    display: none;
+}
+.product-portfolio a:hover i::before{
+    display: inline-block !important; margin-right: 1%;
+}
+.product-rackets{
+
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.product-rackets-title{
+    text-align: start; border-radius: 10px; background-color: rgba(102, 119, 136, 0.065);
+    width: 98%;
+    padding: 1%; margin: 0 auto;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; justify-content: space-between;
+}
+.product-rackets-title>div{
+    display: flex; 
+    flex-direction: row;
+    align-items: center; justify-content: space-between;
+    width: 20%;
+}
+.product-rackets-title div div{
+    display: flex; 
+    flex-direction: row;
+    align-items: center; justify-content: space-between;
+
+}
+
+.product-rackets-row{
+   
+    display: flex;flex-direction: row; align-items: center; justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1%;
+    
+}
+.product-rackets-row>div{
+    width: 23%; border: rgba(102, 119, 136, 0.394) 1px solid;
+    height: 40vh;
+    position: relative; margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column; border-radius: 10px;
+}
+.product-rackets-row>div:hover{
+    box-shadow: 1px 1px 3px 1px rgba(102, 119, 136, 0.477); z-index: 1000; border: none;
+    transform: scale(1.05,1.05);
+}
+.product-rackets-row>div:hover img{
+     border-radius: 10px; height: 90%;
+}
+.product-rackets-row>div img{
+    object-fit: contain; width: 100%; height: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.product-rackets-row>div:hover img{
+    transform: scale(1.1,1.1);
+}
+/* .product-rackets-row>div .buy{
+    width: 100%; display: block;
+    height: 30vh;
+   position: absolute; background-color:  rgb(4, 112, 220); z-index: 300000;
+   top: 0px; 
+} */
+.product-rackets-col-choice, .product-rackets-col-sale{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+.product-rackets-col-choice{
+    bottom:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.product-rackets-col-choice>div{
+    margin: 1% auto;
+    width: 80%;  background-color: rgba(102, 119, 136, 0.103);
+    height: 23%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; opacity: 0;
+}
+.product-rackets-col-choice>div:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.product-rackets-col-choice>div:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product-rackets-row>div:hover .product-rackets-col-choice>div{
+    opacity: 1; 
+    transition: 1s ease-in-out;
+}
+.icons{
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-around !important;
+}
+.icons i {
+    color: #678;
+}
+.icons i:hover{
+    color: aquamarine;
+}
+.product-rackets-col-sale{
+    top:-1%;
+    left: -5%;
+    width: 100%;
+    height: 20%; 
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between  !important;
+}
+.product-rackets-col-sale img{
+
+    width: 30% !important;
+}
+.product-rackets-col-sale p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 172, 172);
+}

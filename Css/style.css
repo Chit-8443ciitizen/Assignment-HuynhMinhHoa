@@ -21,6 +21,7 @@ body {
     /* align-items: center; */
 }
 
+ /* nhúng font chữ */
 @font-face {
     font-family: Orbitron;
     src: url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
@@ -29,34 +30,11 @@ body {
 .boder-r10 {
     border-radius: 10%;
 }
-
-.row {
+.ctct{
     display: flex;
     flex-direction: row;
-}
-
-.r-jt-ar {
-    justify-content: space-around;
-}
-
-.r-jt-bt {
-    justify-content: space-between;
-}
-
-.r-jt-ct {
     justify-content: center;
-}
-
-.r-jt-st {
-    justify-content: start;
-}
-
-.r-al-ct {
     align-items: center;
-}
-
-.r-m-ct {
-    margin: 0 auto;
 }
 
 
@@ -84,6 +62,39 @@ body {
 .c-al-st {
     align-items: start;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.r-jt-ar {
+    justify-content: space-around;
+}
+
+.r-jt-bt {
+    justify-content: space-between;
+}
+
+.r-jt-ct {
+    justify-content: center;
+}
+
+.r-jt-st {
+    justify-content: start;
+}
+.r-jt-en {
+    justify-content: end;
+}
+.r-al-ct {
+    align-items: center;
+}
+
+.r-m-ct {
+    margin: 0 auto;
+}
+
+
 .background {
     background-image: url(Images/banerr.jpg);
     background-size: cover;
@@ -102,6 +113,7 @@ body {
     padding: 0;
 }
 .m0{margin: 0;}
+.pl5vh{padding-left: 20vh;}
 .px5 {
     padding-left: 5%;
     padding-right: 5%;
@@ -129,7 +141,7 @@ body {
 .px-2 {
     padding: 0 3%;
 }
-
+.mt5vh{margin-top: 5vh;}
 .mt-5vh {
     margin-top: 5vh;
 }
@@ -138,6 +150,7 @@ body {
     margin-bottom: 1vh;
 }
 .mb3vh{ margin-bottom: 10vh;}
+.mb4vh{ margin-bottom: 4vh;}
 .mr-2px {
     margin-right: 1%
 }
@@ -151,6 +164,7 @@ body {
 .mr10 {
     margin-right: 10%;
 }
+.ml0{ margin-left: 0;}
 .ml1 {
     margin-left: 1%;
 }
@@ -221,6 +235,7 @@ body {
     height: 1.5vh;
 }
 .h50vh{height: 50vh;}
+.h5vh{ height: 5vh;}
 .h30 {
     height: 30%;
 }
@@ -272,7 +287,9 @@ input {
 input:focus {
     border: 1px solid green;
 }
-
+.bcdm{
+    background-color: #d6d6d6;
+}
 .bcdm1 {
     background-color: #8deafd;
 }
@@ -306,7 +323,7 @@ nav {
     margin: 0;
     border-bottom: 1px solid #eee;
     box-shadow: 0 0 5px 1px #678;
-    background-color: #fff;
+    background-color: #fff; color: #678;
     height: 5vh;
     width: 100%;
     align-items: center;
@@ -320,7 +337,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: gray;
+    color: #678;
 }
 
 ul {
@@ -332,7 +349,7 @@ ul {
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; z-index: 50;
 }
 
 ul li {
@@ -347,7 +364,7 @@ ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: larger;
-    color: gray;
+    color:  #678;
     padding: 0 5px;
     line-height: 40px;
     /* width: 100%; */
@@ -358,11 +375,12 @@ ul li a:hover {
     color: #fff;
     width: auto;
     border-radius: 40px;
+    background-color: rgba(102, 119, 136, 0.737) !important;
     background-color: rgba(128, 128, 128, 0.521);
 }
 
 ul li:hover ul {
-    display: block;
+    display: block; z-index: 500; 
 }
 
 ul ul {
@@ -376,7 +394,7 @@ ul ul {
     background-color: transparent;
     /* border: 1px solid #eee; */
     width: 150%;
-    z-index: 20;
+    z-index: 50;
 }
 
 ul ul a {
@@ -384,7 +402,7 @@ ul ul a {
     display: block;
     /* line-height: 30px; */
     border-radius: 3px;
-    color: gray;
+    color:  #678;
     text-decoration: none;
     font-variant: small-caps;
     font-size: larger;
@@ -413,9 +431,6 @@ div>.fa-solid {
     font-size: 25px;
 }
 
-div>.fa-solid:hover {
-    background-color: gray;
-}
 nav div{
     width: 30%;
     height: 100%;
@@ -426,8 +441,12 @@ nav div div{
     align-items: center;
     width: 10%;
 }
+nav>div>div input:focus {
+    border: 2px solid rgb(41, 193, 249);
+    outline: none;
+    }
 nav div div a{
-    text-decoration: none;
+    text-decoration: none; 
     color: #678;
     height: 100%;
     width: 100%; border: none;
@@ -607,9 +626,35 @@ img {
 }
 
 .bar p {
-    font-weight: 700;
-    font-size: 20px;
-
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 1%;
+    border-right: 1px solid #678;
+    padding-right: 1%;
+}
+.bar p a{
+    text-decoration: none;
+    color: #678;
+}
+.bar p a:hover{
+    border-bottom: 1px solid #678;
+    transition: 2s ease-in-out;
+}
+.bar p:first-child{
+    margin-left: 3%;
+}
+.bar>p:last-child{
+    border: none !important;
+    color: rgba(102, 119, 136, 0.44) !important;
+}
+.bar>p:last-child a{
+    color: rgba(102, 119, 136, 0.346) !important ;
+    text-transform: uppercase;
+    pointer-events: none;
+    cursor: none;
+}
+.bar1{
+    border: none !important;
 }
 #title{
     min-height: 7vh;
@@ -762,7 +807,6 @@ section div div a {
     color: #fff !important;
 }
 
-.adshirt1  div .from-left:hover a {}
 
 .adshirt1 div div {
     /* border: none;  */
@@ -900,9 +944,7 @@ section div div a {
     position: absolute;
     top: 50%;
 }
-.choices i::before{
-    
-}
+
 .choices i:hover{
     color: #678 !important;
     background-color: transparent;
@@ -967,7 +1009,7 @@ select div img{
     flex-direction: column;
     align-items: center;
     border: none;
-    background-color: gray;
+    background-color:  #678;
     opacity: 0;
     transition: 1s;
 }
@@ -994,7 +1036,7 @@ select div img{
     border: none;
     border-radius: 2vh;
     background-color: #ffffff;
-    color: gray;
+    color:  #678;
     opacity: 1;
     font-size: 15px;
     box-shadow: 0 5px 3px 0 #3d3d3d;
@@ -1090,7 +1132,8 @@ select div img{
 .alexenp2:hover {
     background-color: #000;
     border: none;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
+
 }
 
 .alexenp2:hover a {
@@ -1131,6 +1174,7 @@ footer {
    background-size: cover; 
    
 }
+
 footer, footer div div a p, footer div div a i
  {
     color: #fff;
