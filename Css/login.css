@@ -58,6 +58,14 @@ form button:hover{
     box-shadow: none;
     transform: translateY(10px) ;
   }
+form button> a{ 
+  text-decoration: none;
+  color: #678;
+}
+form button:hover>a{
+  color: #fff;
+  transition: 1s ease;
+}
   .login-form div a{
     text-decoration: none;
     color: rgba(102, 119, 136, 0.459);
