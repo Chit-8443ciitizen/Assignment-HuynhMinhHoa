@@ -1,0 +1,106 @@
+{
+    "categories":[
+        {
+            "id": 1,
+            "name": "Apparel",
+            "description": "Sports apparel and knitwear for practice and competition"
+        },
+         {
+            "id": 2,
+            "name": "Accessories",
+            "description": "Equipment and technical support tools"
+        },
+        {
+          "id": 3,
+          "name": "Racquets",
+          "description": "Sports apparel and knitwear for practice and competition"
+        },
+        {
+          "id": 4,
+          "name": "Shuttlecocks",
+          "description": "Sports apparel and knitwear for practice and competition"
+        },
+        {
+        "id": 5,
+        "name": "Bags",
+        "description": "Badminton racket bag: Convenient design for storing and transporting your badminton racket."
+        }
+    ],
+    "products":[
+        {
+          "id": 1,
+          "name": "Crew Neck Shirt ",
+          "price": 100,
+          "image": "1.webp",
+          "category": "Apparel",
+          "description": "Color: ALOE, SAPPHIRE NAVY; Material(s) 92% Polyester, 8% Polyurethane Other: 86% Polyester, 14% Polyurethane."
+        },
+        {
+          "id": 2,
+          "name": "ECLIPSION Shoses",
+          "price": 499,
+          "image": "2.png",
+          "category": "Apparel",
+          "description": "Color(s) NAVY BLUE Materia POWER CUSHION+, POWER CUSHION, Double Raschel Mesh, Durable Skin Light, Power Graphite Sheet, Feather Bounce Foam."
+        },
+        {
+          "id": 3,
+          "name": "Bag pro 22 ",
+          "price": 2000,
+          "image": "3.png",
+          "category": "Bags",
+          "description": "Smoother contours throughout the racquet head for less wind resistance and extra racquet speed."
+        },
+        {
+          "id": 4,
+          "name": "Bag special 23",
+          "price": 10,
+          "image": "4.png",
+          "category": "Bags",
+          "description": "Smoother contours throughout the racquet head for less wind resistance and extra racquet speed."
+        },
+        {
+          "id": 5,
+          "name": "wrap racket 01",
+          "price": 750,
+          "image": "5.png",
+          "category": "Accessories",
+          "description": "Color(s) New Color Lightning Yellow launching June 2023, Mist Purple,Smash Pink,Fine Blue, Tango Red, Grayish Pearl, Black Size (LxWxH)78 x 30 x 34 cm."
+        },
+        {
+          "id": 6,
+          "name": "monofilament 55mm",
+          "price": 15,
+          "image": "6.png",
+          "category": "Accessories",
+          "description": "Color(s) Black, White, Pink Material(s) 100% Polyester."
+        },
+        {
+          "id": 7,
+          "name": "monofilament 65mm",
+          "price": 200,
+          "image": "7.png",
+          "category": "Accessories",
+          "description": "Color(s) WHITE, RUBY RED Material(s) Main: 90% Polyester, 10% Polyurethane Other: 100% Polyester INNER SHORTS: 89% POLYESTER, 11% POLYURETHANE."
+        },
+        {
+          "id": 8,
+          "name": "Nanoflare 002 Clear",
+          "price": 550,
+          "image": "0.png",
+          "category": "Racquets",
+          "description": "Graphite Length 10 mm Weight / Grip 4U (Avg. 83g) G4, 5 Stringing Advice 4U: 20 - 30 lbs Recommended String Control Players."
+        },
+        {
+          "id": 9,
+          "name": "Shuttlecork Palastic 500",
+          "price":15,
+          "image": "prd-shuttlecork01.png",
+          "category": "Shuttlecocks",
+          "description": "Graphite Length 10 mm Weight / Grip 4U (Avg. 83g) G4, 5 Stringing Advice 4U: 20 - 30 lbs Recommended String Control Players."
+        }
+      ],
+    "racket": [
+    ]
+}
+

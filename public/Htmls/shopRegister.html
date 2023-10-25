@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../Css/style.css">
+
+  
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/prod3.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- link icon Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body >
+
+    <div class="bar mt-5vh  mb-2vh">
+        <p class="mr-2px ">Page</p>
+        <p class=" ">Register</p>
+    </div>
+
+    <div class="register ">
+        <div class=" p0 m0 ">
+            <div><h2>Register</h2></div>
+            <div class="register-form ">
+                <div class="row r-al-ct r-jt-en">
+                    <p>Already have an account,</p>
+                    <a href="login.html">Login here !</a>
+                </div>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input type="text"placeholder="Full name (*)" id="fullname"> 
+                    <input type="text"placeholder="Email (*)" id="email">
+                    <input type="text"placeholder="Phone number" id="phoneNumber">
+                    <input class="" type="password" placeholder="Input password" id="password">
+                    <input class="" type="password" placeholder="Input password again" id="passAgain">
+                    <div class="">
+                        <p>Gender:</p>
+                        <input checked="checked" name="gender" type="radio" value="man" /> Man
+                        <input name="gender" type="radio" value="woman" />Woman
+                        <input name="gender" type="radio" value="others" />Others
+                    </div>
+                    <button type="button" id="btnRegister"> Register</button>
+                
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="../Js/shopRegister.js" ></script>
+  
+
+</body>
+
+
+</html>

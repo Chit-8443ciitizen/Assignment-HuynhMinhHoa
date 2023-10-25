@@ -1,0 +1,27 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "fullname": "Lê Tèo ",
+      "email": "leteo123@gmail.com ",
+      "phoneNumber": "84123456789",
+      "password": "leteo123",
+      "gender": "man",
+      "address": "01 Lê Duẩn, Đà Nẵng",
+      "customer": true
+    }
+  ],
+  "admin": [
+    {
+        "id": 1,
+        "fullname": "Thị Út",
+        "email": "thiut123@gmail.com",
+        "phoneNumber": "84123456788",
+        "password": "thiut123",
+        "gender": "woman",
+        "address": "02 Lê Duẩn, Đà Nẵng",
+        "admin": true
+    }
+    
+  ]
+}

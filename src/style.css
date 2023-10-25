@@ -1,0 +1,139 @@
+*{
+   /* background-image: linear-gradient( to right, #eee, #00275b );; */
+  
+}
+
+.admin button{ font-family: var(--primary-font);}
+/* css index */
+.admin .container-fluid header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.admin .container-fluid header>img {
+  width: 20% !important;
+  box-shadow: 0px 4px 5px 2px gray;
+
+}
+
+/* @SayyedNasarAli  */
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+          #231557 0%,
+          #44107a 29%,
+          #ff1361 67%,
+          #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+      background-position: 200% center;
+  }
+}
+footer{
+  float: right;
+  background-color: #fff;
+  color: #000;
+  height: auto;
+}
+/* syntax root */
+/* Định nghĩa biến CSS cho màu chính */
+:root {
+  --primary-background-color: #140047d3 !important; 
+  --primary-active-background-color: #14004755 !important; 
+  --primary-letters-color: #fff !important; 
+  --primary-font: Poppin !important; 
+}
+@font-face {
+  font-family: 'Poppin'; /* Đặt tên cho font */
+  src: url('../assets/Fonts/Poppins-Regular.ttf')  
+}
+
+/* syntax  */
+.bg-main{
+  background-color: var(--primary-background-color-color) !important;
+}
+.bg-main-active{
+  background-color: var(--primary-active-background-color) !important;
+}
+.bgclicked{ background-color: #001d7352 !important; color: #fff !important;}
+.bcdm{ background-color: #a6a6a615 !important;}
+.bcdm1{ background-color:rgba(251, 196, 196, 0.373) !important;}
+.ctctRow{ display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important;}
+.m0{ margin: 0 !important;}
+.mauto0{ margin: auto 0 !important;}
+.p0{ padding: 0 !important;}
+.p5{ padding: 5% !important;}
+.p10{ padding: 10% !important;}
+.w6vw{ width: 6vw !important;}
+.w7vw{ width: 7vw !important;}
+.w15{ width: 15% !important;}
+.w20{ width: 20% !important;}
+.w25{ width: 25% !important;}
+.w40{ width: 40% !important;}
+.w50{ width: 50% !important;}
+.w80{ width: 80% !important;}
+.w90{ width: 90% !important;}
+.w100{ width: 100% !important;}
+.h11vh{ height: 11vh !important;}
+.h80{ height: 80%;}
+.h-auto{ height: auto;}
+.w50px{ width: 50px !important;}
+.h50px{ height: 50px !important;}
+.h-55px{ height: 55px !important;}
+.pl-5px{ padding-left: 5px !important;}
+.pl-10px{ padding-left: 10px !important;}
+
+/* body */
+body{ font-family: var(--primary-font); width: 90% !important; margin: auto;}
+
+/* navbar admin */
+/* start nav-top */
+.container-fluid .nav-top{ background-color: var(--primary-background-color) !important;}
+.container-fluid .navbar .navbar-brand { display: flex; flex-direction: row; align-items: center; background-color: #eeeeee25;}
+.navbar .navbar-brand img { box-shadow: 0 1px 2px 2px #a4a4a4 !important; border-radius: 100% !important; width: 50px; height: 50px;}
+.container-fluid .container-fluid .navbar .navbar-brand a>p{ color: var(--primary-letters-color) !important ;}
+.container-fluid .navbar-nav .nav-item{ padding-left: 10px !important; border-radius: 10px; }
+/* .container-fluid .navbar-nav .nav-item:hover{ background-color: var(--primary-background-color); transition: ease-in-out 0.75s;} */
+.container-fluid .navbar-nav .nav-item:hover .nav-link{ color: var(--primary-letters-color) ;  }
+.container-fluid .navbar-nav .nav-item .dropdown-menu{ width: 95%; }
+/* end nav-top */
+
+/* start nav left  */
+
+.nav-left div ul li {margin: 2px 0;}
+.nav-left div ul li a { display: flex; flex-direction: row; align-items: center; justify-content: start; padding-left: 10px !important; border: 1px solid #3f61b284 !important;} 
+.nav-left div ul li a span { width: 20%;}
+.nav-left div ul li a span svg { width: 100%;  object-fit: contain;}
+.nav-left div ul li a p{ padding: 0; align-items: center; margin: auto 5px ; background-color: #ffffff00;}
+/* end nav left  */
+
+/* container-show */
+.container-fluid
+.container-show{ border: 1px solid #000; height: 700px; width: 100%; padding: 5px; }
+.container-show button{ width: 20%;}
+.container-show button span{ width: 20px !important;height:30px !important;}
+.container-show button span svg{ background-color: transparent !important; color: var(--primary-letters-color); width:20px !important; height:20px !important;}
+.container-show table tr{ justify-content: space-between !important; height: 70px !important;}
+/* .container-show table tr td:last-child{ display: flex !important; flex-direction: row !important;  justify-content: space-between !important; } */
+.container-show table tbody tr {height: 50px !important; align-items: center !important; border-top: none !important; border-bottom: 1px solid #9b9b9b6c;}
+.container-show table tbody tr td {height: 40px !important;   border: none; text-align: center;  align-items: center;}
+.container-show table tbody tr td img{ margin:1% 0; width: 50% !important; height: 100% !important;} /*width: 50px; height: 50px;*/
+.container-show table tbody tr td:last-child{ height: 64px !important;  align-items: center; border-top: none !important; margin: 0vh 0 !important;}
+.container-show table tbody tr td:last-child button{ height: 40px !important; margin: 0 0 !important;}
+
+/* form update */

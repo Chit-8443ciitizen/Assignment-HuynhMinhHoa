@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+}
+a{
+    color: unset;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #d1d1d14b, #879f9c32);
+    padding: 2%;
+}
+a:hover img{
+    transform: scale(1.1,1.1);
+    /* box-shadow: 0px 5px 10px 2px rgb(106, 106, 106); */
+    transition: 0.5s ease-in-out;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.title{
+    font-size: xx-large; 
+    margin: 0 2vw;
+    padding: 20px 0;
+    display: flex; flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.title .iconCart{
+    margin-left: 300px;
+    width: 50px;
+    padding: 5px;
+    height: 50px;
+    /* border: 1px solid #000; */
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.title .iconCart:hover{
+    box-shadow:  0px 5px 5px #eee;
+    border: none;
+    border-radius: 100%;
+}
+.title .iconCart img{
+    width: 50px;
+    background-color: transparent;
+    color: #deedfc16;
+    
+}
+.title .totalQuantity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: x-large;
+    background-color: #006b8b;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(20px);
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    border-radius: 20px; 
+    position: relative;
+}
+.listProduct .item h2{
+    font-size: large;
+    font-weight: 500;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eee;
+}
+/* detail page */
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: left;
+}
+.detail .image img{
+    width: 200px;
+    height: 100%; 
+    /* background-color: #60fea245; */
+    /* object-fit:cover; */
+}
+.detail .image{
+    position: relative;
+    text-align: center;  
+    /* background-color: #f1939331; */
+}
+.detail .image::before{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    content: "";
+    background-color: #9bc8b521;
+    z-index: -1;
+    border-radius: 190px 100px 170px 180px;
+    left: calc(56% - 150px);
+    top: 3px;
+}
+.detail .name{
+    font-size: xxx-large;
+    padding: 10px 0 0 0;
+    margin: 0 0 10px 0;
+}
+.detail .price{
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 7px;
+    margin-bottom: 20px;
+}
+.detail .buttons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.detail .buttons button{
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: large;
+}
+.detail .buttons svg{
+    width: 15px;
+}
+.detail .buttons span{
+    background-color: #555454;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10%;
+    color: #eee;
+}
+.detail .buttons button{
+    transition: 0.5s;
+}
+.detail .buttons button:active{
+    box-shadow: none;
+    transform: translateY(5px) ;
+}
+.detail .buttons button:hover{
+    cursor: pointer;
+}
+.detail .buttons button:nth-child(2){
+    background-color:#2f2f2f;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px #2f2f2f77;
+}
+.detail .description {
+    font-weight: 300;
+}
+/* cart */
+.cart{
+    color: #fff;
+    position: fixed;
+    width: 400px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: #0E0F11;
+    top: 0px;
+    right: -100%;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 20px;
+    transition: right 1s;
+}
+
+.cart .buttons .checkout{
+    background-color: #83defa;
+    
+}
+.cart .buttons .checkout a{
+    background-color: transparent;
+    color: #000 !important;
+}
+.cart h2{
+    color: #83defa;
+    padding: 20px;
+    height: 30px;
+    margin: 0;
+}
+
+
+.cart .listCart .item{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+.cart .listCart .item img{
+    width: 65px; background-color: #c2f6ff1b;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cart .listCart .item .content{
+    margin-left: 10px;
+}
+.cart .listCart .item .name{
+    font-weight: bold;
+    
+}
+/* .cart .listCart .item .content .name{
+    text-transform: lowercase;
+} */
+.cart .listCart .item .quantity{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cart .listCart .item .quantity span{
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+.cart .listCart{
+    padding: 20px;
+    overflow: auto;
+}
+.cart .listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.cart .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.cart .buttons div{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart .buttons a{
+    color: #fff;
+    text-decoration: none;
+}
+/* ipad */
+@media screen and (max-width:992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .detail{
+        grid-template-columns: 40% 1fr;
+    }
+}
+/* mobile */
+@media screen and (max-width:768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .detail{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .detail .img img{
+        width: unset;
+        height: 48vh;
+    }
+    .detail .name{
+        font-size: x-large;
+        margin: 0;
+    }
+    .detail .buttons button{
+        font-size: small;
+    }
+    .detail .buttons {
+        justify-content: center;
+    }
+}
